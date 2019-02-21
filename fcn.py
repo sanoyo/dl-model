@@ -8,10 +8,7 @@ from keras.models import *
 import keras.backend as K
 import tensorflow as tf
 
-from utils.get_weights_path import *
-from utils.basics import *
-from utils.resnet_helpers import *
-from utils.BilinearUpSampling import *
+import BilinearUpSampling
 
 
 def FCN_Vgg16(input_shape=None, weight_decay=0., batch_momentum=0.9, batch_shape=None, classes=21):
